@@ -1,0 +1,20 @@
+BoxLayout:
+    orientation: 'vertical'
+    BoxLayout:
+        orientation: 'vertical'
+        Button:
+            text: 'Cheese, $12.50'
+        Button:
+            text: 'Laptop, $912.95'
+        Button:
+            text: 'Plant, $4.75'
+
+    BoxLayout:
+        orientation: 'horizontal'
+        size_hint_y: 0.2
+        Label:
+            id: my_label
+            text: 'Total Price: '
+        Button:
+            on_press: app.handle_pressed()
+            text: 'Reset'
